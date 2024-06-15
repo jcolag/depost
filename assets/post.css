@@ -1,0 +1,144 @@
+/* Uses colors from https://www.nordtheme.com/ licensed under the
+ * terms of the MIT license.
+ */
+:root {
+  --base03: #eceff4;
+  --base02: #e5e9f0;
+  --base01: #d8dee9;
+  --base0: #4c566a;
+  --base1: #434c5e;
+  --base2: #3b4252;
+  --base3: #2e3440;
+  --yellow: #ebcb8b;
+  --orange: #d08770;
+  --red: #bf616a;
+  --magenta: #cc6694;
+  --violet: #b48ead;
+  --blue: #796ef7;
+  --cyan: #8fbcbb;
+  --green: #a3be8c;
+  accent-color: var(--yellow);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--violet);
+}
+
+code, kbd, pre, samp {
+  color: var(--cyan);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base03: #2e3440;
+    --base02: #3b4252;
+    --base01: #434c5e;
+    --base0: #4c566a;
+    --base1: #d8dee9;
+    --base2:  #e5e9f0;
+    --base3: #eceff4;
+    --yellow: #ebcb8b;
+    --orange: #d08770;
+    --red: #bf616a;
+    --magenta: #cc6694;
+    --violet: #b48ead;
+    --blue: #796ef7;
+    --cyan: #8fbcbb;
+    --green: #a3be8c;
+    accent-color: var(--magenta);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--orange);
+  }
+
+  code, kbd, pre, samp {
+    color: var(--blue);
+  }
+}
+  
+h1,h2,h3,h4,h5,h6 {
+  margin: 3em 0 1em;
+}
+
+p,ul,ol {
+  margin-bottom: 2em;
+}
+
+body {
+  background-color: var(--base03);
+  color: var(--base0);
+  font-family: sans-serif;
+  font-size: 25px;
+  line-height: 1.75;
+  margin: auto;
+  max-width: 70ch;
+  padding: 3em 1em;
+  text-wrap: balance;
+}
+
+h1, h2, h3, h4, h5, h6, legend {
+  font-family: serif;
+}
+
+b, i, strong, em, blockquote, q {
+  color: var(--base1);
+}
+  
+a {
+  color: var(--blue);
+}
+  
+a:hover {
+  color: var(--red);
+}
+  
+a:visited {
+  color: var(--violet);
+}
+
+img {
+  border-radius: 5%;
+}
+
+.user {
+  border: 1px solid var(--base2);
+  border-radius: 1em;
+  left: 15%;
+  padding: 1em;
+  position: relative;
+  width: 70%;
+}
+
+.user .background {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.user .avatar {
+  border-radius: 50%;
+  float: left;
+  margin-right: 1em;
+}
+
+.user h1 {
+  text-shadow: 2px 2px var(--base2), -2px -2px var(--base2);
+}
+
+.interactions {
+  display: table;
+}
+
+.interaction {
+  border: 1px solid var(--base2);
+  display: table-cell;
+  padding: 0.1em;
+  text-align: center;
+}
